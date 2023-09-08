@@ -1,11 +1,18 @@
 # PortafolioAnalisisIA
 **Portafolio para la clase Inteligencia Artificial Avanzada para la Ciencia de Datos, Grupo 101**
 
+
 Dentro del portafolio se encuentran cuatro archivos importantes: [Módulo 1 Técnicas de procesamiento de datos para el análisis estadístico y para la construcción de modelos](LimpiezaDatos.ipynb), [Módulo 1 Construcción de un modelo estadístico base](ConstruccionModelo.ipynb), [Módulo 2 Análisis y Reporte sobre el desempeño del modelo](ReporteDesempeño.ipynb) y [Análisis del contexto y la normatividad](Análisis_del_Contexto_y_la_Normatividad_-2.pdf). Estos folders contienen los archivos de los entregables que corresponde a cada uno de los módulos en donde se pide una evidencia de portafolio. 
+
 
 
 ## Módulo 1 Técnicas de procesamiento de datos para el análisis estadístico y para la construcción de modelos
 Para la evidencia del módulo 1, se creó el archivo [LimpiezaDatos.ipynb](LimpiezaDatos.ipynb) en donde se descargó la [base de datos](precios_autos-2.csv) y se hizo un análisis exploratorio para una compañía automovilista china para que puedan entender el mercado automovilista americano y puedan establecer una fábrica de unidades en dicho país al predecir el valor de los precios en base a las variables de los carros. En este, se crearon diferentes gráficos de histogramas y de boxplot para encontrar valores atípicos y ver cómo tratarlos. Igualmente se hicieron análisis de colinealidad y de distribuciones para observar qué variables son las que puedan predecir el precio de un automovil en base a diferentes factores que afectan al consumidor americano. Finalmente se eligieron seis variables que se consideraron importantes para la predicción de los precios de los autos.
+
+
+
+## Módulo 1 Construcción de un modelo estadístico base
+Dentro del archivo [CostruccionModelo.ipynb](CostruccionModelo.ipynb) encontramos la continuación del archivo [LimpiezaDatos.ipynb](LimpiezaDatos.ipynb). En este, se trabajó con los mismos [datos](precios_autos-2.csv). En este, se trabajó con las variables elegidas anteriormente y se transformaron para que sigan una distribución normal usando la transformación de Yeo Johnson. Después, se comenzó a entrenar un modelo de Regresión Lineal Múltiple con el objetivo de predecir la variable 'price'. Una vez obtenido el modelo, se calcularon las métricas de desempeño del modelo las cuales fueron bastante buenas. Ahora, para asegurar que el modelo sea el indicado y sí sea bueno para los datos, se buscó confirmar si hay Normalidad en los Residuos al realizar una prueba de hipótesis sobre si los residuos tienen una media igual a cero con un nivel de significancia del 95% en donde se encontró que si se cumple dicha hipótesis. Recopilando todo, encontramos un modelo de regresión lineal en relación a la variable price. Este dio buenos resultados al obtener una correlación de 87.59% y un error relativamente pequeño. Para poder seguir analizando el modelo, se hizo una prueba de hipótesis para los valores de los residuos para encontrar si las variables son independientes o dependientes, con lo cual se encontró que efectivamente eran independientes. Con esto, encontramos un modelo que es muy bueno para la estimación de precio bajo las variables que se mencionaron anteriormente, sin embargo, siempre hay espacio para mejorar al buscar hiperparámetros más eficientes y óptimos al seguir entrenando el modelo con nuevos valores o con una base de datos mayor. 
 
 
 
